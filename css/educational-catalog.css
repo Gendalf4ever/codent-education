@@ -515,9 +515,46 @@
         font-size: 1.5rem;
     }
     
-    .educational-table thead th:nth-child(2),
-    .educational-table tbody td:nth-child(2) {
-        display: none;
+    /* Показываем все колонки, но делаем их более компактными */
+    .educational-table thead th,
+    .educational-table tbody td {
+        padding: 8px 4px;
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+    
+    /* Делаем изображения еще меньше для мобильных */
+    .equipment-image,
+    .equipment-image-placeholder {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .equipment-image-placeholder {
+        font-size: 1.5rem;
+    }
+    
+    /* Компактные названия */
+    .equipment-name h5 {
+        font-size: 0.85rem;
+        margin-bottom: 4px;
+        line-height: 1.2;
+    }
+    
+    /* Компактные описания */
+    .equipment-description p {
+        font-size: 0.7rem;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+    
+    .equipment-details {
+        padding: 4px;
+    }
+    
+    .equipment-details small {
+        font-size: 0.65rem;
+        line-height: 1.1;
     }
     
     .filter-section .row > div {
@@ -526,24 +563,46 @@
     
     .equipment-category {
         flex-direction: column;
-        gap: 3px;
-    }
-    
-    .equipment-details small {
-        font-size: 0.7rem;
+        gap: 2px;
     }
     
     .spec-item-table {
-        margin-bottom: 4px;
-        padding: 2px 0;
+        margin-bottom: 2px;
+        padding: 1px 0;
     }
     
     .spec-label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+        margin-bottom: 1px;
     }
     
     .spec-value {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
+        line-height: 1.1;
+    }
+    
+    /* Улучшаем читаемость бейджей */
+    .badge {
+        font-size: 0.65rem;
+        padding: 4px 8px;
+    }
+    
+    /* Делаем таблицу прокручиваемой горизонтально если нужно */
+    .educational-table {
+        font-size: 0.75rem;
+        min-width: 100%;
+    }
+    
+    /* Улучшаем отображение характеристик в мобильной версии */
+    .spec-item-table .spec-label {
+        display: inline;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+    
+    .spec-item-table .spec-value {
+        display: inline;
+        margin-left: 5px;
     }
 }
 

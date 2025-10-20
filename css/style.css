@@ -112,7 +112,51 @@ footer {
 }
 
 .hero-section {
-    display: none; /* Скрываем hero секцию */
+    display: none !important; /* Скрываем hero секцию */
+}
+
+/* Дополнительный отступ сверху для мобильных */
+@media (max-width: 480px) {
+    .unified-gradient-container {
+        margin-top: 40px !important;
+    }
+    
+    .feature-card,
+    .intro-section-card {
+        height: 140px !important;
+        padding: 10px 6px;
+        margin-bottom: 10px;
+    }
+    
+    .feature-icon,
+    .intro-section-card .section-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 4px;
+    }
+    
+    .feature-icon i,
+    .intro-section-card .section-icon i {
+        font-size: 1.1rem;
+    }
+    
+    .feature-card h4,
+    .intro-section-card h4 {
+        font-size: 0.9rem;
+        margin-bottom: 3px;
+    }
+    
+    .feature-card p,
+    .intro-section-card p {
+        font-size: 0.75rem;
+        line-height: 1.1;
+    }
+    
+    .features-section h2,
+    .introduction-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .card {
@@ -877,7 +921,7 @@ footer .col-md-6 {
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     text-align: center;
-    height: 200px;
+    height: 200px !important;
     width: 100%;
     transition: all 0.4s ease;
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -1263,7 +1307,7 @@ footer .col-md-6 {
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     text-align: center;
-    height: 200px;
+    height: 200px !important;
     width: 100%;
     transition: all 0.4s ease;
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -1376,17 +1420,21 @@ footer .col-md-6 {
         margin-bottom: 3rem;
     }
     
-    .feature-card {
+    .feature-card,
+    .intro-section-card {
         margin-bottom: 3px;
         padding: 35px 25px;
+        height: 200px;
     }
     
-    .feature-icon {
+    .feature-icon,
+    .intro-section-card .section-icon {
         width: 80px;
         height: 80px;
     }
     
-    .feature-icon i {
+    .feature-icon i,
+    .intro-section-card .section-icon i {
         font-size: 2.5rem;
     }
 }
@@ -1396,9 +1444,18 @@ footer .col-md-6 {
         padding-top: 56px;
     }
     
+    .unified-gradient-container {
+        margin-top: 80px !important;
+        padding-bottom: 30px;
+    }
+    
     .features-section {
         min-height: auto;
-        padding: 50px 15px;
+        padding: 30px 15px 20px 15px !important;
+    }
+    
+    .introduction-section {
+        padding: 20px 15px 30px 15px !important;
     }
     
     .courses-preview {
@@ -1407,31 +1464,41 @@ footer .col-md-6 {
     }
     
     .features-section h2,
-    .courses-preview h2 {
-        font-size: 2rem;
-        margin-bottom: 2.5rem;
+    .courses-preview h2,
+    .introduction-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
     
-    .feature-card {
-        padding: 30px 25px;
+    .feature-card,
+    .intro-section-card {
+        height: 180px !important;
+        padding: 15px 10px;
+        margin-bottom: 15px;
+    }
+    
+    .feature-card h4,
+    .intro-section-card h4 {
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+    }
+    
+    .feature-card p,
+    .intro-section-card p {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+    
+    .feature-icon,
+    .intro-section-card .section-icon {
+        width: 50px;
+        height: 50px;
         margin-bottom: 8px;
     }
     
-    .feature-card h4 {
+    .feature-icon i,
+    .intro-section-card .section-icon i {
         font-size: 1.5rem;
-    }
-    
-    .feature-card p {
-        font-size: 1rem;
-    }
-    
-    .feature-icon {
-        width: 75px;
-        height: 75px;
-    }
-    
-    .feature-icon i {
-        font-size: 2.25rem;
     }
     
     footer {
@@ -1449,9 +1516,20 @@ footer .col-md-6 {
         padding-top: 56px;
     }
     
+    .unified-gradient-container {
+        margin-top: 60px !important;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        padding-bottom: 20px;
+    }
+    
     .features-section {
         min-height: auto;
-        padding: 40px 10px;
+        padding: 20px 10px 15px 10px !important;
+    }
+    
+    .introduction-section {
+        padding: 15px 10px 20px 10px !important;
     }
     
     .courses-preview {
@@ -1460,31 +1538,41 @@ footer .col-md-6 {
     }
     
     .features-section h2,
-    .courses-preview h2 {
-        font-size: 1.75rem;
-        margin-bottom: 2rem;
+    .courses-preview h2,
+    .introduction-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     
-    .feature-card {
-        padding: 25px 20px;
-        margin-bottom: 7px;
+    .feature-card,
+    .intro-section-card {
+        height: 160px !important;
+        padding: 12px 8px;
+        margin-bottom: 12px;
     }
     
-    .feature-icon {
-        width: 70px;
-        height: 70px;
+    .feature-icon,
+    .intro-section-card .section-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 6px;
     }
     
-    .feature-icon i {
-        font-size: 2rem;
+    .feature-icon i,
+    .intro-section-card .section-icon i {
+        font-size: 1.3rem;
     }
     
-    .feature-card h4 {
-        font-size: 1.35rem;
+    .feature-card h4,
+    .intro-section-card h4 {
+        font-size: 1rem;
+        margin-bottom: 4px;
     }
     
-    .feature-card p {
-        font-size: 0.95rem;
+    .feature-card p,
+    .intro-section-card p {
+        font-size: 0.85rem;
+        line-height: 1.2;
     }
     
     footer {
@@ -1498,80 +1586,58 @@ footer .col-md-6 {
     footer p {
         font-size: 0.9rem;
     }
-    
-    /* Адаптация блока введения для мобильных */
-    .unified-gradient-container {
-        margin-top: 150px;
-        margin-bottom: 3px;
-        border-radius: 20px;
-        padding-bottom: 20px;
-    }
-    
-    .introduction-wrapper {
-        padding: 25px 15px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    
-    .introduction-section {
-        padding-bottom: 30px;
-    }
-    
-    .introduction-section h2 {
-        font-size: 1.75rem;
-        margin-bottom: 3px;
-    }
-    
-    .intro-section-card {
-        padding: 15px 10px;
-        margin-bottom: 5px;
-    }
-    
-    .intro-section-card .section-icon {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .intro-section-card .section-icon i {
-        font-size: 2rem;
-    }
-    
-    .intro-section-card h4 {
-        font-size: 1.35rem;
-    }
-    
-    .intro-section-card p {
-        font-size: 0.95rem;
-    }
 }
 
 /* Дополнительные адаптивные стили для планшетов */
 @media (max-width: 992px) {
     .unified-gradient-container {
+        margin-top: 100px !important;
         border-radius: 25px;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
     
-    .introduction-wrapper {
-        padding: 60px 20px;
+    .features-section {
+        padding: 40px 20px 25px 20px !important;
     }
     
+    .introduction-section {
+        padding: 25px 20px 35px 20px !important;
+    }
+    
+    .features-section h2,
     .introduction-section h2 {
-        font-size: 2.5rem;
-        margin-bottom: 40px;
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
     }
     
+    .feature-card,
     .intro-section-card {
-        padding: 35px 25px;
-        margin-bottom: 3px;
+        height: 190px !important;
+        padding: 18px 12px;
+        margin-bottom: 18px;
     }
     
+    .feature-icon,
     .intro-section-card .section-icon {
-        width: 80px;
-        height: 80px;
+        width: 55px;
+        height: 55px;
+        margin-bottom: 8px;
     }
     
+    .feature-icon i,
     .intro-section-card .section-icon i {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+    }
+    
+    .feature-card h4,
+    .intro-section-card h4 {
+        font-size: 1.15rem;
+        margin-bottom: 6px;
+    }
+    
+    .feature-card p,
+    .intro-section-card p {
+        font-size: 0.95rem;
+        line-height: 1.35;
     }
 }
