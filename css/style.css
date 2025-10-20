@@ -810,7 +810,7 @@ footer .col-md-6 {
 /* ==================== Стили для карточек введения ==================== */
 /* Объединенный контейнер с перетекающим градиентом */
 .unified-gradient-container {
-    margin-top: 900px;
+    margin-top: 200px;
     margin-bottom: 10px;
     background: linear-gradient(180deg, 
         #8b5cf6 0%,      /* Фиолетовый верх */
@@ -824,13 +824,13 @@ footer .col-md-6 {
     position: relative;
     border-radius: 30px;
     overflow: hidden;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .introduction-wrapper {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
     background: transparent;
     position: relative;
     border-radius: 0;
@@ -873,14 +873,20 @@ footer .col-md-6 {
 .intro-section-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    padding: 15px 10px;
+    padding: 20px 15px;
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     text-align: center;
-    height: 100%;
+    height: 200px;
+    width: 100%;
     transition: all 0.4s ease;
     border: 2px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .intro-section-card:hover {
@@ -893,7 +899,7 @@ footer .col-md-6 {
 .intro-section-card .section-icon {
     width: 60px;
     height: 60px;
-    margin: 0 auto 5px;
+    margin: 0 auto 10px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 50%;
     display: flex;
@@ -901,6 +907,7 @@ footer .col-md-6 {
     justify-content: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    flex-shrink: 0;
 }
 
 .intro-section-card:hover .section-icon {
@@ -913,17 +920,21 @@ footer .col-md-6 {
 }
 
 .intro-section-card h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--dark-color);
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+    flex-shrink: 0;
 }
 
 .intro-section-card p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #5a5c69;
-    line-height: 1.7;
+    line-height: 1.4;
     margin-bottom: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 /* Стили для модальных окон */
@@ -1248,13 +1259,19 @@ footer .col-md-6 {
 .feature-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    padding: 15px 10px;
+    padding: 20px 15px;
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     text-align: center;
-    height: 100%;
+    height: 200px;
+    width: 100%;
     transition: all 0.4s ease;
     border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .feature-card:hover {
@@ -1267,7 +1284,7 @@ footer .col-md-6 {
 .feature-icon {
     width: 60px;
     height: 60px;
-    margin: 0 auto 5px;
+    margin: 0 auto 10px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 50%;
     display: flex;
@@ -1275,6 +1292,7 @@ footer .col-md-6 {
     justify-content: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    flex-shrink: 0;
 }
 
 .feature-card:hover .feature-icon {
@@ -1282,22 +1300,26 @@ footer .col-md-6 {
 }
 
 .feature-icon i {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
 }
 
 .feature-card h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--dark-color);
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+    flex-shrink: 0;
 }
 
 .feature-card p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #5a5c69;
-    line-height: 1.7;
+    line-height: 1.4;
     margin-bottom: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 /* Секция курсов */
@@ -1479,14 +1501,14 @@ footer .col-md-6 {
     
     /* Адаптация блока введения для мобильных */
     .unified-gradient-container {
-        margin-top: 300px;
+        margin-top: 150px;
         margin-bottom: 3px;
         border-radius: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
     
     .introduction-wrapper {
-        padding: 50px 15px;
+        padding: 25px 15px;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -1501,8 +1523,8 @@ footer .col-md-6 {
     }
     
     .intro-section-card {
-        padding: 25px 15px;
-        margin-bottom: 7px;
+        padding: 15px 10px;
+        margin-bottom: 5px;
     }
     
     .intro-section-card .section-icon {
