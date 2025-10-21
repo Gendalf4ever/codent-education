@@ -1,13 +1,34 @@
 /* Стили для страницы курсов в стиле index.html */
 
+/* Убираем белый фон у html */
+html {
+    background: linear-gradient(180deg, 
+        #8b5cf6 0%,      /* Фиолетовый верх */
+        #7c3aed 15%,
+        #6d28d9 30%,
+        #7c3aed 45%,
+        #764ba2 60%,
+        #667eea 80%,     /* Синий переход */
+        #5a67d8 100%     /* Синий низ */
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 /* Добавляем прокрутку для страницы */
 body.courses-page {
     overflow-y: auto;
     min-height: 100vh;
     scroll-behavior: smooth;
     padding-top: 56px;
-    margin-top: 0;
+    margin: 0;
     height: auto;
+    overflow-x: hidden;
+    background: transparent;
 }
 
 /* Улучшаем прокрутку для контейнера */
@@ -15,6 +36,10 @@ body.courses-page {
     min-height: 70vh;
     overflow-y: auto;
     padding-bottom: 40px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background: transparent;
 }
 
 /* Плавная прокрутка для всех элементов */
@@ -23,9 +48,11 @@ body.courses-page {
 }
 
 /* Улучшаем размещение контента */
-.container {
+.unified-gradient-container .container {
     max-width: 1400px;
     padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Дополнительные отступы для лучшего размещения */
@@ -46,6 +73,17 @@ body.courses-page {
     .col-lg-9, .col-lg-3 {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    
+    .unified-gradient-container .container {
+        padding: 0 15px;
+    }
+}
+
+/* Дополнительные стили для мобильных */
+@media (max-width: 768px) {
+    .unified-gradient-container .container {
+        padding: 0 10px;
     }
 }
 
