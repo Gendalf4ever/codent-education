@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотополимеры - CODENT Обучение</title>
+    <link rel="icon" type="image/png" href="src/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/scaners.css">
+    <link rel="stylesheet" href="css/photopolymers.css">
+</head>
+<body>
+    <!-- Подключаем единый хедер -->
+    <div id="header-placeholder"></div>
+
+    <div class="container py-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Кнопка назад -->
+                        <div class="mb-3">
+                            <a href="courses.html" class="btn btn-outline-primary">
+                                <i class="fas fa-arrow-left me-2"></i>Назад к курсам
+                            </a>
+                        </div>
+                        
+                        <h1 class="mb-4">Фотополимеры</h1>
+                        <p>
+                            Фотополимер (светополимер) — вещество, которое изменяет свои свойства под воздействием света, чаще ультрафиолетового. До светового воздействия — в основном мягкий и светочувствительный материал.
+                        </p>
+
+                        <h3 class="mt-4">Фотополимеры делятся, на биосовместимые и нет, что это значит?</h3>
+                        <p><strong>Биосовместимые полимеры</strong> - это которые можно разместить во рту пациента, следовательно они не должны вызвать аллергию, и раздражение при контакте со слизистой должно быть исключено</p>
+                        <p><strong>Не биосовместимые полимеры</strong> – то, из чего делают модели для работы, следовательно, что нельзя класть, в рот пациента</p>
+
+                        <!-- Два окошка с полимерами -->
+                        <div class="row mt-5">
+                            <!-- Биосовместимые полимеры -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 border-success">
+                                    <div class="card-header bg-success text-white">
+                                        <h4 class="mb-0">
+                                            <i class="fas fa-check-circle me-2"></i>Биосовместимые полимеры
+                                        </h4>
+                                        <small>На примере продукции CODENT</small>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Для хирургических шаблонов -->
+                                        <div class="mb-4">
+                                            <h6 class="text-success"><i class="fas fa-medical me-2"></i>Для хирургических шаблонов</h6>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="scaner-image-container me-3" style="width: 80px; height: 80px; min-width: 80px; cursor: pointer;" onclick="showImageModal('src/img/capa2.jpg', 'Yellow Clear PRO')">
+                                                    <img src="src/img/capa2.jpg" alt="Yellow Clear PRO" class="scaner-product-image">
+                                                </div>
+                                                <div>
+                                                    <strong>Yellow Clear PRO</strong><br>
+                                                    <small class="text-muted">(хирургические шаблоны)</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Clear pro (каппы) -->
+                                        <div class="mb-4">
+                                            <h6 class="text-success"><i class="fas fa-teeth me-2"></i>Clear pro (каппы)</h6>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="scaner-image-container me-3" style="width: 80px; height: 80px; min-width: 80px; cursor: pointer;" onclick="showImageModal('src/img/capa.jpg', 'Yellow Clear PRO')">
+                                                    <img src="src/img/capa.jpg" alt="Yellow Clear PRO" class="scaner-product-image">
+                                                </div>
+                                                <div>
+                                                    <strong>Yellow Clear PRO</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Коронки -->
+                                        <div class="mb-4">
+                                            <h6 class="text-success"><i class="fas fa-crown me-2"></i>Коронки</h6>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="scaner-image-container me-3" style="width: 80px; height: 80px; min-width: 80px; cursor: pointer;" onclick="showImageModal('src/img/capa3.jpg', 'Dental Sand')">
+                                                    <img src="src/img/capa3.jpg" alt="Dental Sand" class="scaner-product-image">
+                                                </div>
+                                                <div>
+                                                    <strong>Dental sand</strong><br>
+                                                    <small class="text-muted">(для временных коронок, которые носятся меньше месяца - двух)</small>
+                                                </div>
+                                            </div>
+                                            <div class="ms-5">
+                                                <strong>Dental sand PRO</strong><br>
+                                                <small class="text-muted">(для временных коронок, которые носятся больше 1-го месяца)</small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Сплинты -->
+                                        <div class="mb-4">
+                                            <h6 class="text-success"><i class="fas fa-shield-alt me-2"></i>Сплинты</h6>
+                                            <small class="text-muted">(лучше фрезеровать на станке, но можно и печатать)</small><br>
+                                            <strong>Dental Splint Soft</strong>
+                                        </div>
+
+                                        <!-- Каппы для переноса брекет системы -->
+                                        <div class="mb-3">
+                                            <h6 class="text-success"><i class="fas fa-teeth-open me-2"></i>Каппы для переноса брекет системы</h6>
+                                            <strong>Ibt</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Не биосовместимые полимеры -->
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 border-warning">
+                                    <div class="card-header bg-warning text-dark">
+                                        <h4 class="mb-0">
+                                            <i class="fas fa-exclamation-triangle me-2"></i>Не биосовместимые полимеры
+                                        </h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-warning"><strong>Не биосовместимые</strong>, простыми словами сугубо для работы вне ротовой полости пациента</p>
+
+                                        <!-- Для моделей -->
+                                        <div class="mb-4">
+                                            <h6 class="text-warning"><i class="fas fa-cube me-2"></i>Для моделей</h6>
+                                            
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="scaner-image-container me-3" style="width: 80px; height: 80px; min-width: 80px; cursor: pointer;" onclick="showImageModal('src/img/capa6.jpg', 'D1S')">
+                                                    <img src="src/img/capa6.jpg" alt="D1S" class="scaner-product-image">
+                                                </div>
+                                                <div>
+                                                    <strong>D1S</strong><br>
+                                                    <small class="text-muted">оранжевый плотный полимер</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="scaner-image-container me-3" style="width: 80px; height: 80px; min-width: 80px; cursor: pointer;" onclick="showImageModal('src/img/capa7.jpg', 'Light Grey')">
+                                                    <img src="src/img/capa7.jpg" alt="Light Grey" class="scaner-product-image">
+                                                </div>
+                                                <div>
+                                                    <strong>Light Grey</strong><br>
+                                                    <small class="text-muted">это аналог выше представленного полимера</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Десневая маска -->
+                                        <div class="mb-4">
+                                            <h6 class="text-warning"><i class="fas fa-mask me-2"></i>Десневая маска</h6>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="scaner-image-container me-3" style="width: 80px; height: 80px; min-width: 80px; cursor: pointer;" onclick="showImageModal('src/img/capa8.jpg', 'Pink soft')">
+                                                    <img src="src/img/capa8.jpg" alt="Pink soft" class="scaner-product-image">
+                                                </div>
+                                                <div>
+                                                    <strong>Pink soft</strong><br>
+                                                    <small class="text-muted">мягкий полимер</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Cherry cast -->
+                                        <div class="mb-3">
+                                            <h6 class="text-warning"><i class="fas fa-fire me-2"></i>Cherry cast</h6>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="scaner-image-container me-3" style="width: 80px; height: 80px; min-width: 80px; cursor: pointer;" onclick="showImageModal('src/img/capa9.jpg', 'Cherry cast')">
+                                                    <img src="src/img/capa9.jpg" alt="Cherry cast" class="scaner-product-image">
+                                                </div>
+                                                <div>
+                                                    <strong>Cherry cast</strong><br>
+                                                    <small class="text-muted">выжигаемый полимер для любых работ</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Раздел с товарами из Firebase -->
+                        <div class="mt-5">
+                            <h3 class="mb-4">
+                                <i class="fas fa-shopping-bag me-2"></i>Фотополимеры
+                            </h3>
+                            <div id="photopolymers-products-container">
+                                <div class="loading-spinner">
+                                    <div class="spinner-border" role="status">
+                                        <span class="visually-hidden">Загрузка...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для просмотра изображений -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalTitle">Изображение</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="" class="img-fluid" style="max-height: 70vh; border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>CODENT Education</h5>
+                    <p class="mb-0">Образовательная платформа для стоматологов</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 CODENT Education. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Firebase Configuration -->
+    <script src="js/firebase-config.js"></script>
+    
+    <!-- Header Script -->
+    <script src="js/header.js"></script>
+    
+    <!-- Photopolymers Page Script -->
+    <script src="js/photopolymers.js"></script>
+    
+    <!-- Загружаем хедер -->
+    <script>
+        // Загружаем хедер из компонента
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-placeholder').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки хедера:', error);
+            });
+    </script>
+</body>
+</html>

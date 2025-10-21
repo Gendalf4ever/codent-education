@@ -10,6 +10,31 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <style>
+        /* Делаем страницу flexbox для прижатия футера вниз */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 56px; /* Отступ для фиксированного хедера */
+        }
+        
+        /* Основной контент занимает всё доступное пространство */
+        .main-content {
+            flex: 1 0 auto;
+        }
+        
+        /* Футер прижимается к низу */
+        footer {
+            flex-shrink: 0;
+            margin-top: auto;
+        }
+        
         .team-photo {
             width: 160px;
             height: 160px;
@@ -33,39 +58,42 @@
     <!-- Подключаем единый хедер -->
     <div id="header-placeholder"></div>
 
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="mb-3">Наша команда</h1>
-            <p class="text-muted">Познакомьтесь с экспертами, которые создают и развивают платформу</p>
-        </div>
-
-        <div class="row g-4">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card team-card text-center p-4">
-                    <img src="src/img/1-2.png" alt="Член команды" class="mx-auto team-photo mb-3">
-                    <h5 class="mb-1">Габиб Керимов</h5>
-                    <span class="text-muted d-block mb-2">sample text</span>
-                    <p class="mb-0">Краткое описание того, чем занимается</p>
-                </div>
+    <!-- Основной контент -->
+    <div class="main-content">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h1 class="mb-3">Наша команда</h1>
+                <p class="text-muted">Познакомьтесь с экспертами, которые создают и развивают платформу</p>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card team-card text-center p-4">
-                    <img src="src/img/2-2.png" alt="Член команды" class="mx-auto team-photo mb-3">
-                    <h5 class="mb-1">Евгений Братчиков</h5>
-                    <span class="text-muted d-block mb-2">Основатель</span>
-                    <p class="mb-0">Краткое описание того, чем занимается</p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card team-card text-center p-4">
-                    <img src="src/img/3-2.jpg" alt="Член команды" class="mx-auto team-photo mb-3">
-                    <div class="d-flex justify-content-center mb-3">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card team-card text-center p-4">
+                        <img src="src/img/1-2.png" alt="Член команды" class="mx-auto team-photo mb-3">
+                        <h5 class="mb-1">Габиб Керимов</h5>
+                        <span class="text-muted d-block mb-2">sample text</span>
+                        <p class="mb-0">Краткое описание того, чем занимается</p>
                     </div>
-                    <h5 class="mb-1">Андрюша Чикатило</h5>
-                    <span class="text-muted d-block mb-2">Самый важный человек в команде</span>
-                    <p class="mb-0">Краткое описание того, чем занимается</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card team-card text-center p-4">
+                        <img src="src/img/2-2.png" alt="Член команды" class="mx-auto team-photo mb-3">
+                        <h5 class="mb-1">Евгений Братчиков</h5>
+                        <span class="text-muted d-block mb-2">Основатель</span>
+                        <p class="mb-0">Краткое описание того, чем занимается</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card team-card text-center p-4">
+                        <img src="src/img/3-2.jpg" alt="Член команды" class="mx-auto team-photo mb-3">
+                        <div class="d-flex justify-content-center mb-3">
+                        </div>
+                        <h5 class="mb-1">Андрюша Чикатило</h5>
+                        <span class="text-muted d-block mb-2">Самый важный человек в команде</span>
+                        <p class="mb-0">Краткое описание того, чем занимается</p>
+                    </div>
                 </div>
             </div>
         </div>

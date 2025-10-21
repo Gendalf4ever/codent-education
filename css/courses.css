@@ -586,6 +586,11 @@ body.courses-page {
     transition: all 0.3s ease;
 }
 
+/* Фиолетовый цвет для иконки фотополимеров */
+.text-purple {
+    color: #8b5cf6 !important;
+}
+
 .quick-link-card:hover {
     text-decoration: none;
     color: inherit;
